@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Go Web Shell</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="webclient.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="hostAddress">{{.}}</div>
+<div id="log"></div>
+<form id="form" action="http://{{.}}/" method="post">
+    <input type="text" name="command" id="command" size="64"/>
+    <input type="submit" id="btnSend" value="执行" />
+    <input type="submit" id="btnEnd" value="结束" />
+</form>
+</body>
+</html>
